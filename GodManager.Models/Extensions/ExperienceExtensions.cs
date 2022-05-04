@@ -1,7 +1,10 @@
+using GodManager.Models.Base;
+using GodManager.Models.User;
+
 namespace GodManager.Models.Extensions;
 public static class ExperienceExtensions
 {
-    public static void RecualculateLevel(this God god)
+    public static void RecalculateLevel(this God god)
     {
         var tmpExp = god.Experience;
         var counter = 0;
@@ -11,7 +14,7 @@ public static class ExperienceExtensions
             {
                 god.level = counter;
             }
-            if (counter == GodBase.MaxLevel)
+            if (counter == GodBase.MaxGodLevel)
             {
                 god.level = counter;
             }

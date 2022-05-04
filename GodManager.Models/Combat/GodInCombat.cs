@@ -1,4 +1,5 @@
 using GodManager.Core.Models;
+using GodManager.Models.User;
 
 namespace GodManager.Models.Combat;
 public class GodInCombat : BaseModel
@@ -7,6 +8,6 @@ public class GodInCombat : BaseModel
 
     public GodInCombat(God baseGod)
     {
-        BaseGod = baseGod;
+        BaseGod = baseGod.CloneWithJson();
     }
 }

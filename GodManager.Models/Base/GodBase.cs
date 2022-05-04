@@ -2,7 +2,7 @@ using GodManager.Core.Models;
 using GodManager.Models.Enums;
 using GodManager.Models.Repository;
 
-namespace GodManager.Models;
+namespace GodManager.Models.Base;
 public class GodBase : GodModel
 {
     public string Name {get;set;}
@@ -19,10 +19,10 @@ public class GodBase : GodModel
     #endregion Base Stats
 
     #region Base Abilities
-    public Ability Ability_01 {get;set;}
-    public Ability Ability_02 {get;set;}
-    public Ability Ability_03 {get;set;}
-    public Ability Ability_04 {get;set;}
+    public Ability? Ability_01 {get;set;}
+    public Ability? Ability_02 {get;set;}
+    public Ability? Ability_03 {get;set;}
+    public Ability? Ability_04 {get;set;}
     #endregion Base Abilities
 
     public Dictionary<Element, AffinityType> ElementAffinities {get;set;} = new Dictionary<Element, AffinityType>();
@@ -33,8 +33,11 @@ public class GodBase : GodModel
         Description = description;
         Culture = culture;
         Element = element;
+
+        //Affinities default Values
+        //The main god element is assigned as resist
         GodRepository.Instance.Elements.ToList().ForEach(x =>
-            ElementAffinities.Add(x,
+            ElementAffinities.Add(x.CloneWithJson(),
                                   Element == x?AffinityType.Resist:AffinityType.Normal));
     }
 }

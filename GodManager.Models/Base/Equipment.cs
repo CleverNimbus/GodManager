@@ -1,7 +1,6 @@
 using GodManager.Core.Models;
 
-namespace GodManager.Models;
-
+namespace GodManager.Models.Base;
 public class Equipment : BaseModel
 {
     public string Name {get;set;}

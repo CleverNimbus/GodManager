@@ -1,4 +1,4 @@
-using GodManager.Core.Extensions;
+using GodManager.Models.Base;
 
 //https://en.wikipedia.org/wiki/Lists_of_deities_by_cultural_sphere
 

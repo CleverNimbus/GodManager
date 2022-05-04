@@ -1,6 +1,6 @@
 using GodManager.Core.Models;
 
-namespace GodManager.Models;
+namespace GodManager.Models.Base;
 public class Culture : BaseModel
 {
     public string CultureName {get;set;}
