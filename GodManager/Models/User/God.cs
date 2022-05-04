@@ -1,7 +1,6 @@
-using GodManager.Core.Models;
 using GodManager.Models.Enums;
-using GodManager.Models.Extensions;
 using GodManager.Models.Base;
+using GodManager.Core.Extensions;
 
 namespace GodManager.Models.User;
 public class God : BaseModel

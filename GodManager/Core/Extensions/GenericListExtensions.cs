@@ -1,4 +1,4 @@
-using GodManager.Core.Models;
+using GodManager.Models;
 
 namespace GodManager.Core.Extensions;
 public static class GenericListExtensions

@@ -4,6 +4,8 @@ using GodManager.Core.Exceptions;
 namespace GodManager.Core.Extensions;
 public static class ObjectExtensions
 {
+    //Clone an object using a JSON serialization and deserialization
+    //TODO: Check a way to do this more efficiently
     public static T CloneWithJson<T>(this T source)
     {
         if (ReferenceEquals(source, null))

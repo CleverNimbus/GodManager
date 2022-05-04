@@ -1,4 +1,4 @@
-namespace GodManager.Core.Models;
+namespace GodManager.Models;
 public class GodModel : BaseModel
 {
     public const int MaxGodLevel = 50;

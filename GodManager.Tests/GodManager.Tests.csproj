@@ -16,9 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GodManager.Core\GodManager.Core.csproj" />
-    <ProjectReference Include="..\GodManager.Engine\GodManager.Engine.csproj" />
-    <ProjectReference Include="..\GodManager.Models\GodManager.Models.csproj" />
+    <ProjectReference Include="..\GodManager\GodManager.csproj" />
   </ItemGroup>
 
 </Project>

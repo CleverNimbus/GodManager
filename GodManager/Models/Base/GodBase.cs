@@ -1,4 +1,4 @@
-using GodManager.Core.Models;
+using GodManager.Core.Extensions;
 using GodManager.Models.Enums;
 using GodManager.Models.Repository;
 

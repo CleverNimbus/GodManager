@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodManager.Core", "GodManager.Core\GodManager.Core.csproj", "{AFABB8B6-3F9F-4140-916A-520319234C38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodManager.Core", "GodManager\GodManager.csproj", "{AFABB8B6-3F9F-4140-916A-520319234C38}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodManager.Ends", "GodManager.Ends\GodManager.Ends.csproj", "{D421DEB8-A987-4C9D-9CDF-E519EE3C17A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodManager.Models", "GodManager.Models\GodManager.Models.csproj", "{0959FBF2-305B-430E-925B-6E9AA253355E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodManager.Engine", "GodManager.Engine\GodManager.Engine.csproj", "{93A2F6D6-6BF8-40D0-90DC-3C614F6CC436}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodManager.Tests", "GodManager.Tests\GodManager.Tests.csproj", "{158DCD49-72D6-44E4-8C4A-14D24A9414DE}"
 EndProject
