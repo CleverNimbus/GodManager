@@ -44,7 +44,7 @@ public class God : BaseModel
         set
         {
             experience = value;
-            this.RecalculateLevel();
+            //this.RecalculateLevel();
         }
     }
 
@@ -53,8 +53,8 @@ public class God : BaseModel
     {
         get
         {
-            if (level == 0)
-                this.RecalculateLevel();
+            //if (level == 0)
+            //    this.RecalculateLevel();
             return level;
         }
     }

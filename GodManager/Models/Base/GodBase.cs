@@ -33,11 +33,5 @@ public class GodBase : GodModel
         Description = description;
         Culture = culture;
         Element = element;
-
-        //Affinities default Values
-        //The main god element is assigned as resist
-        GodRepository.Instance.Elements.ToList().ForEach(x =>
-            ElementAffinities.Add(x.CloneWithJson(),
-                                  Element == x?AffinityType.Resist:AffinityType.Normal));
     }
 }

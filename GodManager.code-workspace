@@ -4,5 +4,10 @@
 			"path": "."
 		}
     ],
-    "settings": {}
+    "settings": {
+        "editor.codeLens": false,
+        "editor.fontSize": 15,
+        "editor.cursorBlinking": "blink",
+        "editor.minimap.maxColumn": 60
+    }
 }
