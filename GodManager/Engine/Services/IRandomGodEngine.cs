@@ -1,4 +1,4 @@
-namespace GodManager.Core.Services;
+namespace GodManager.Engine.Services;
 public interface IRandomGodEngine
 {
     

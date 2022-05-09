@@ -1,6 +1,6 @@
 using GodManager.Models.Base;
 
-namespace GodManager.Core.Services;
+namespace GodManager.Engine.Services;
 public interface IGodEngine
 {
     void InitGodAffinities(GodBase godBase);

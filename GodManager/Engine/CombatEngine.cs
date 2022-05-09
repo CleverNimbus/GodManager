@@ -1,4 +1,4 @@
-using GodManager.Core.Services;
+using GodManager.Engine.Services;
 using GodManager.Models.Combat;
 using GodManager.Models.Enums;
 using GodManager.Models.User;

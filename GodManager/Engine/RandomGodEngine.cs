@@ -1,4 +1,4 @@
-using GodManager.Core.Services;
+using GodManager.Engine.Services;
 
 namespace GodManager.Engine;
 public class RandomGodEngine : IRandomGodEngine
