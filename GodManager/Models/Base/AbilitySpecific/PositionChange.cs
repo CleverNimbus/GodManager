@@ -3,6 +3,8 @@ public class PositionChange : RootAbility
 {
     public PositionChange()
     {
+        HeroCanHaveAbility = true;
+        GodCanHaveAbility = false;
         IsAllSelfTurnsAbility = true;
     }
 }

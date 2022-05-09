@@ -9,6 +9,7 @@ public class GodBase : GodModel
     public string Description {get;set;}
     public Culture Culture {get;set;}
     public Element Element {get;set;}
+    public GodAIBehaviourType BehaviourType {get;set;}
 
     #region Base Stats
     public int Strenght {get;set;}

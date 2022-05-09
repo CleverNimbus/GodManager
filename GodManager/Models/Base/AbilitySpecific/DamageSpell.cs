@@ -6,5 +6,6 @@ public class DamageSpell : RootAbility
     public DamageSpell(Element element)
     {
         this.Element = element;
+        GodCanHaveAbility = true;
     }
 }
