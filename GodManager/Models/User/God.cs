@@ -6,6 +6,7 @@ namespace GodManager.Models.User;
 public class God : BaseModel
 {
     public GodBase GodBase {get;set;}
+    public GodAIBehaviourType BehaviourType {get;set;}
 
     #region Specific Base stats
     public int Strenght {get;set;}
@@ -33,7 +34,7 @@ public class God : BaseModel
     #endregion Equipment
 
     public Dictionary<Element, AffinityType> ElementAffinities {get;set;}
-    
+
     private int experience = 0;
     public int Experience 
     {
@@ -44,7 +45,6 @@ public class God : BaseModel
         set
         {
             experience = value;
-            //this.RecalculateLevel();
         }
     }
 
@@ -53,8 +53,6 @@ public class God : BaseModel
     {
         get
         {
-            //if (level == 0)
-            //    this.RecalculateLevel();
             return level;
         }
     }
@@ -67,6 +65,7 @@ public class God : BaseModel
         Vitality = godBase.Vitality;
         Dexerity = godBase.Dexerity;
         Luck = godBase.Luck;
+        BehaviourType = godBase.BehaviourType;
         ElementAffinities = godBase.ElementAffinities.CloneWithJson();
     }
 }
